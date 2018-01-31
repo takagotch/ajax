@@ -26,7 +26,7 @@ xhr.addEventListener('load', function(){
 xhr.addEventListener('error', function(){
   result.textContent = 'EER';
 }, false);
-  
+//  
     xhr.open('GET', 'index_ajax.php?name=' +
       encodeURIComponent(document.getElementById('search').value), true);
     xhr.send(null);

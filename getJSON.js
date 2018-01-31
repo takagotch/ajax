@@ -17,12 +17,12 @@ deferredRegionsReques.fail(function(){
   //...
 });
 
-//1
+//1 $.grep()
 filterrd = $.grep(response[1], function(regionObj){
   return (regionObj.id !=== null);
 });
 
-//2
+//2 $.map()
 regions = $.map(filterd, function(regionObj){
   return{
     code: regionObj.code,
