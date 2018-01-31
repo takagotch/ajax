@@ -14,13 +14,6 @@ document.addEventListener('DOMContentLoaded', function(){
         result.textContent = 'LOADING...'
       }
     };
-  
-    xhr.open('GET', 'index_ajax.php?name=' +
-      encodeURIComponent(document.getElementById('search').value), true);
-    xhr.send(null);
-  }, false);
-}, false);
-
 //2
 xhr.addEventListener('loadstart', function(){
   result.textContent = 'LOADING...';
@@ -33,4 +26,11 @@ xhr.addEventListener('load', function(){
 xhr.addEventListener('error', function(){
   result.textContent = 'EER';
 }, false);
+  
+    xhr.open('GET', 'index_ajax.php?name=' +
+      encodeURIComponent(document.getElementById('search').value), true);
+    xhr.send(null);
+  }, false);
+}, false);
+
 
